@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Conference List - Android Study Group</title>
+    <meta name="description" content="A community-curated list of Android and Java conferences around the world.">
+
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+  </head>
+  <body>
+    <div class="container">
+      <div class="header clearfix">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+            <li role="presentation" class="active"><a href="/">Upcoming</a></li>
+            <!--<li role="presentation"><a href="#">Past</a></li>-->
+            <li role="presentation"><a href="https://github.com/AndroidStudyGroup/conference/#readme">Add</a></li>
+          </ul>
+        </nav>
+        <h3 class="text-muted">Android Conferences</h3>
+      </div>
+
+      {{ content }}
+
+      <footer class="footer">
+        <p><a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a></p>
+      </footer>
+    </div>
+  </body>
+</html>

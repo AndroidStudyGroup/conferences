@@ -1,0 +1,4 @@
+markdown: kramdown
+
+collections:
+- conferences

@@ -1,0 +1,22 @@
+---
+---
+@charset "utf-8";
+
+@import "layout";
+
+.conference-list {
+  margin-bottom: 0;
+
+  li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    &:hover {
+      background-color: #f6f6f6;
+    }
+
+    .label {
+      float: right;
+    }
+  }
+}

@@ -1,0 +1,30 @@
+---
+layout: default
+---
+
+<script>
+var today = new Date();
+</script>
+<ul class="conference-list list-unstyled">
+{% assign sorted_conferences = (site.conferences | sort: 'date_start') %}
+{% assign today = (site.time | date: "%s" ) %}
+{% for conference in sorted_conferences %}
+  {% assign date_end = (conference.date_end | date: "%s") %}
+  {% if today < date_end %}
+  <li>
+    {{ conference.date_start | date: "%Y-%m-%d" }}&nbsp;
+    <a class="post-link" href="{{ conference.website }}">{{ conference.name }}</a>
+    <script>
+      {% if conference.cfp_start %}
+      if (today >= new Date('{{ conference.cfp_start | date: "%Y-%m-%d" }}') && today <= new Date('{{ conference.cfp_end | date: "%Y-%m-%d" }}')) {
+        document.write('<span class="label label-success">Call For Papers</span>');
+      }
+      {% endif %}
+      if (today >= new Date('{{ conference.date_start | date: "%Y-%m-%d" }}') && today <= new Date('{{ conference.date_end | date: "%Y-%m-%d" }}')) {
+        document.write('<span class="label label-danger">Happening Now</span>'); 
+      }
+    </script>
+  </li>
+  {% endif %}
+{% endfor %}
+</ul>
