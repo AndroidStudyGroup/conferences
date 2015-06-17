@@ -14,6 +14,9 @@ var today = new Date();
   <li>
     {{ conference.date_start | date: "%Y-%m-%d" }}&nbsp;
     <a class="post-link" href="{{ conference.website }}">{{ conference.name }}</a>
+    {% if conference.location %}
+    &nbsp;<small>{{ conference.location }}</small>
+    {% endif %}
     <script>
       {% if conference.cfp_start %}
       if (today >= new Date('{{ conference.cfp_start | date: "%Y-%m-%d" }}') && today <= new Date('{{ conference.cfp_end | date: "%Y-%m-%d" }}')) {
@@ -21,7 +24,7 @@ var today = new Date();
       }
       {% endif %}
       if (today >= new Date('{{ conference.date_start | date: "%Y-%m-%d" }}') && today <= new Date('{{ conference.date_end | date: "%Y-%m-%d" }}')) {
-        document.write('<span class="label label-danger">Happening Now</span>'); 
+        document.write('<span class="label label-danger">Happening Now</span>');
       }
     </script>
   </li>

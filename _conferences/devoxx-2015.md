@@ -1,6 +1,7 @@
 ---
 name: "Devoxx"
 website: http://devoxx.be/
+location: Antwerp, Belgium
 
 date_start: 2015-11-09
 date_end:   2015-11-13
