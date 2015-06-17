@@ -15,7 +15,7 @@ example, `my-cool-conference-2016.md`).
 The contents of the file should use the following template:
 ```
 ---
-name: "Droidcon UK"
+name: "Droidcon"
 website: http://uk.droidcon.com/2015/
 location: London, UK
 
