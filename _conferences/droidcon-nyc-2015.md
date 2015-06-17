@@ -1,5 +1,5 @@
 ---
-name: "Droidcon NYC"
+name: "Droidcon"
 website: http://droidcon.nyc/2015/
 location: New York City, USA
 

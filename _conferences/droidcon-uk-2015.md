@@ -1,5 +1,5 @@
 ---
-name: "Droidcon UK"
+name: "Droidcon"
 website: http://uk.droidcon.com/2015/
 location: London, UK
 

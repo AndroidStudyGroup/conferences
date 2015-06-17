@@ -1,5 +1,5 @@
 ---
-name: "Droidcon Stockholm"
+name: "Droidcon"
 website: http://droidcon.se/events/stockholm-2015/
 location: Stockholm, Sweden
 

@@ -1,5 +1,5 @@
 ---
-name: "AnDevCon Boston"
+name: "AnDevCon"
 website: http://www.andevcon.com/boston
 location: Boston, USA
 

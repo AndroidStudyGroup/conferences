@@ -1,5 +1,5 @@
 ---
-name: "AnDevCon Santa Clara"
+name: "AnDevCon"
 website: http://www.andevcon.com/santaclara
 location: Santa Clara, USA
 

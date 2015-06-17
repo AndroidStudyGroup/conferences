@@ -1,5 +1,5 @@
 ---
-name: "Droidcon Montreal"
+name: "Droidcon"
 website: http://droidcon.ca/
 location: Montreal, Canada
 
