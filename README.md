@@ -1,7 +1,7 @@
 Conferences
 ===========
 
-A community-curated list of Android and Java conferences around the world.
+A community-curated list of conferences around the world for Android developers.
 
 
 Adding a conference
