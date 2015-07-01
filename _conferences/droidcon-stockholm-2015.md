@@ -5,4 +5,7 @@ location: Stockholm, Sweden
 
 date_start: 2015-09-03
 date_end:   2015-09-04
+
+cfp_start: 2015-04-01  # Optional
+cfp_end:   2015-07-31  # Optional
 ---
