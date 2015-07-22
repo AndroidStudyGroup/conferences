@@ -1,5 +1,5 @@
 ---
-name: "Droidcon Greece"
+name: "Droidcon"
 website: http://droidcon.gr
 location: Thessaloniki, Greece
 
