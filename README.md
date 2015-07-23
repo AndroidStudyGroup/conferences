@@ -27,6 +27,8 @@ cfp_end:   2015-07-21  # Optional
 ---
 ```
 
+*Note: Do not include the location of the conference in the name. The above conference is often referred to as "Droidcon London", but we will always render the location with the name so it is redundant.*
+
 
 License
 -------
