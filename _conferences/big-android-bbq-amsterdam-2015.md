@@ -1,5 +1,5 @@
 ---
-name: "Big Android BBQ Amsterdam"
+name: "Big Android BBQ"
 website: http://www.babbq.nl/
 location: Amsterdam, The Netherlands
 
