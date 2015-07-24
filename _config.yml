@@ -1,3 +1,4 @@
+timezone: "UTC"
 markdown: kramdown
 
 collections:

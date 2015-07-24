@@ -1,0 +1,20 @@
+---
+layout: none
+uid_prefix: https://github.com/androidstudygroup/conferences/tree/gh-pages/
+---
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:http://androidstudygroup.github.io/conferences/
+METHOD:PUBLISH
+{% for conference in site.conferences %}BEGIN:VEVENT
+UID:{{ page.uid_prefix }}{{ conference.relative_path }}
+URL:{{ conference.website }}
+DESCRIPTION:{{ conference.website }}{% if conference.location %}
+LOCATION:{{ conference.location }}{% endif %}
+SUMMARY:{{ conference.name }}{% if conference.location %} ({{ conference.location }}){% endif %}
+CLASS:PUBLIC
+DTSTART;VALUE=DATE:{{ conference.date_start | date: "%Y%m%d" }}
+DTEND;VALUE=DATE:{{ conference.date_end | date: "%Y%m%d" }}
+DTSTAMP:{{ site.time | date: "%Y%m%dT%H%M%S" }}Z
+END:VEVENT
+{% endfor %}END:VCALENDAR
