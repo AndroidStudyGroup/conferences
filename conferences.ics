@@ -14,7 +14,7 @@ LOCATION:{{ conference.location }}{% endif %}
 SUMMARY:{{ conference.name }}{% if conference.location %} ({{ conference.location }}){% endif %}
 CLASS:PUBLIC
 DTSTART;VALUE=DATE:{{ conference.date_start | date: "%Y%m%d" }}
-DTEND;VALUE=DATE:{{ conference.date_end | date: "%Y%m%d" }}
+DTEND;VALUE=DATE:{{ conference.date_end | date: "%s" | plus: 86400 | date: "%Y%m%d" }}
 DTSTAMP:{{ site.time | date: "%Y%m%dT%H%M%S" }}Z
 END:VEVENT
 {% endfor %}END:VCALENDAR
