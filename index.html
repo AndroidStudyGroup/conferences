@@ -20,7 +20,7 @@ var today = new Date();
     <script>
       {% if conference.cfp_start %}
       if (today >= new Date('{{ conference.cfp_start | date: "%Y-%m-%d" }}') && today <= new Date('{{ conference.cfp_end | date: "%Y-%m-%d" }}')) {
-        document.write('<span class="label label-success">Call For Papers</span>');
+        document.write('<a href="{% if conference.cfp_site %}{{ conference.cfp_site }}{% else %}{{ conference.website }}{% endif %}"><span class="label label-success">Call For Papers</span></a>');
       }
       {% endif %}
       if (today >= new Date('{{ conference.date_start | date: "%Y-%m-%d" }}') && today <= new Date('{{ conference.date_end | date: "%Y-%m-%d" }}')) {
