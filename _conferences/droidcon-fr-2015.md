@@ -8,4 +8,5 @@ date_end:   2015-11-10
 
 cfp_start: 2015-08-01
 cfp_end:   2015-09-30
+cfp_site: http://cfp.droidcon.fr/
 ---
