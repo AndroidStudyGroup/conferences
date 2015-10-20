@@ -8,4 +8,5 @@ date_end:   2016-04-29
 
 cfp_start: 2015-05-19
 cfp_end:   2016-04-01
+cfp_site:  http://droidcon.hr/en/2015/05/19/call-for-papers/
 ---
