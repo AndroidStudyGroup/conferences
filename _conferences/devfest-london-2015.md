@@ -1,5 +1,5 @@
 ---
-name: "GDG DevFest London 2015"
+name: "GDG DevFest"
 website: http://devfest.gdg-london.com/
 location: London, United Kingdom
 
