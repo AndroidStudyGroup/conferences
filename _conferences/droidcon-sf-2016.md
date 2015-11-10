@@ -1,6 +1,6 @@
 ---
 name: "Droidcon"
-website: http://sf.droidcon.com/2016
+website: http://sf.droidcon.com
 location: San Francisco, USA
 
 date_start: 2016-03-10
