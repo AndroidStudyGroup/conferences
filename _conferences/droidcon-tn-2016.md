@@ -1,5 +1,5 @@
 ---
-name: "Droidcon Tunisia"
+name: "Droidcon"
 website: http://www.droidcon.tn/
 location: Medina Yasmine Hammamet, Tunisa
 
