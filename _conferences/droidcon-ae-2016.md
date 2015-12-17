@@ -1,5 +1,5 @@
 ---
-name: "Droidcon Dubai"
+name: "Droidcon"
 website: http://droidcon.ae/
 location: Dubai, UAE
 
