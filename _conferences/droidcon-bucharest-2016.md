@@ -8,5 +8,5 @@ date_end:   2016-03-13
 
 cfp_start: 2016-01-20
 cfp_end:   2016-02-12
-cfp_site:  http://ro.droidcon.com/2015/call-papers/
+cfp_site:  http://ro.droidcon.com/en/speaker/register
 ---
