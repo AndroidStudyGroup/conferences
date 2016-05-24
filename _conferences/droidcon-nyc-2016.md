@@ -1,6 +1,6 @@
 ---
 name: "Droidcon"
-website: http://droidcon.nyc/
+website: http://2016.droidcon.nyc
 location: New York City, USA
 
 date_start: 2016-09-29
