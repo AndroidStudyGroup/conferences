@@ -1,5 +1,5 @@
 ---
-name: "DroidKaigi 2017"
+name: "DroidKaigi"
 website: https://droidkaigi.github.io/
 location: Tokyo, Japan
 
