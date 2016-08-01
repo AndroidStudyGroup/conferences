@@ -1,6 +1,6 @@
 ---
 name: "GDG Devfest"
-website: http://devfest.de/
+website: https://hamburg.devfest.de/
 location: Hamburg, Germany
 
 date_start: 2016-10-14
