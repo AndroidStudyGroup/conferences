@@ -1,4 +1,4 @@
-name: "GDG DevFest Ukraine 2016"
+name: "GDG DevFest"
 website: https://devfest.gdg.org.ua/
 location: Lviv, Ukraine
 
