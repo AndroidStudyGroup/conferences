@@ -1,5 +1,5 @@
 ---
-name: "DevFest Florida 2016"
+name: "GDG DevFest"
 website: https://devfestflorida.org/
 location: Orlando, Florida, USA
 
