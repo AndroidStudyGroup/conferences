@@ -1,6 +1,6 @@
 ---
-name: "Android DevConference 2016"
-website: http://androidconference2016.imasters.com.br/
+name: "Android DevConference"
+website: http://androidconference.com.br/
 location: São Paulo, Brazil
 
 date_start: 2016-09-05
