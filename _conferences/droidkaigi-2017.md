@@ -1,6 +1,6 @@
 ---
 name: "DroidKaigi"
-website: https://droidkaigi.github.io/
+website: https://droidkaigi.github.io/2017/en/
 location: Tokyo, Japan
 
 date_start: 2017-03-09
