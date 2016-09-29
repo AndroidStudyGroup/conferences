@@ -1,5 +1,5 @@
 ---
-name: "GDG DevFest Tokyo 2016"
+name: "GDG DevFest"
 website: https://developers.google.com/events/5180481289846784/
 location: Tokyo, Japan
 
