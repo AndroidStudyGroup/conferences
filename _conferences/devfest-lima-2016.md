@@ -1,5 +1,5 @@
 ---
-name: "GDG DevFest Lima 2016"
+name: "GDG DevFest"
 website: https://devfest.pe/
 location: Lima, Peru
 
