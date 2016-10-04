@@ -1,0 +1,10 @@
+---
+name: “AnDevCon 2016”
+website: http://www.andevcon.com/
+location: San Francisco, UK
+
+date_start: 2016–11-29
+date_end:   2016-12-01
+
+cfp_site: http://www.andevcon.com/
+---
