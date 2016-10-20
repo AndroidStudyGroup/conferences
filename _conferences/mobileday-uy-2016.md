@@ -1,5 +1,5 @@
 ---
-name: "Mobile Day Uruguay"
+name: "Mobile Day"
 website: http://mobileday.uy
 location: Montevideo, Uruguay
 
