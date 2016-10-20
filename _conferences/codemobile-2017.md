@@ -1,6 +1,6 @@
 ---
 name: "CodeMobile"
-website: https://www.codemobile.co.uk/
+website: http://www.codemobile.co.uk/
 location: Chester, UK
 
 date_start: 2017-04-17
