@@ -1,7 +1,7 @@
 ---
 name: "AppDevCon"
 website: http://www.appdevcon.nl/
-location: Amsterdamn, NL
+location: Amsterdam, NL
 
 date_start: 2017-03-16
 date_end:   2017-03-17
