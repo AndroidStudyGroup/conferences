@@ -1,7 +1,7 @@
 ---
 name: "DevFest Florida"
 website: https://devfestflorida.org/
-location: Orlando, FL
+location: Orlando, FL, USA
 
 date_start: 2017-11-11
 date_end:   2017-11-11
