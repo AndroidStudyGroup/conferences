@@ -1,6 +1,6 @@
 ---
 name: "Mobilization"
-website: http://mobilization.pl/
+website: http://mobilization.pl
 location: Łódź, Poland
 
 date_start: 2017-10-21
