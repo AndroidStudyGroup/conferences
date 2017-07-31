@@ -1,5 +1,5 @@
 ---
-name: "DevFest Cerrado"
+name: "GDG DevFest"
 website: https://devfestcerrado.com.br/
 location: Goiânia, GO, Brazil
 
