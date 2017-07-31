@@ -1,5 +1,5 @@
 ---
-name: "DevFest Belo Horizonte"
+name: "GDG DevFest"
 website: http://www.devfestbh.com.br/
 location: Belo Horizonte, MG, Brazil
 
