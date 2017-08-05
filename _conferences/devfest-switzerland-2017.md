@@ -1,5 +1,5 @@
 ﻿---
-name: GDG DevFest Switzerland
+name: "GDG DevFest"
 website: http://devfest.ch
 location: Fribourg, Switzerland
 
