@@ -1,5 +1,5 @@
 ---
-name: "GDG BlrDroid DevFest"
+name: "GDG DevFest"
 website: https://devfest-blrdroid.github.io/
 location: Bangalore, India
 
