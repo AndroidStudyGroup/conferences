@@ -1,5 +1,5 @@
 ---
-name: "GDG Devfest"
+name: "GDG DevFest"
 website: https://hamburg.devfest.de/
 location: Hamburg, Germany
 
