@@ -1,4 +1,4 @@
-﻿---
+---
 name: "The Open Mobile Summit"
 website: https://www.openmobilemedia.com/san-francisco/
 location: San Francisco, CA, USA
