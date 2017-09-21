@@ -1,5 +1,5 @@
-﻿---
-name: GDG DevFest
+---
+name: "GDG DevFest"
 website: https://devfest.gdg.lv/
 location: Riga, Latvia
 
