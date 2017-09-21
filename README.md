@@ -31,6 +31,15 @@ cfp_site: http://uk.droidcon.com/2015/lineup-2015/ # Optional, will default to w
 *Note: Do not include the location of the conference in the name. The above conference is often referred to as "Droidcon London", but we will always render the location with the name so it is redundant.*
 
 
+Running locally
+---------------
+
+```
+bundle install --path vendor/bundle
+bundle exec jekyll serve
+```
+
+
 License
 -------
 
