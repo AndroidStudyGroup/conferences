@@ -1,5 +1,5 @@
-﻿---
-name: GDG DevFest Bayern
+---
+name: "GDG DevFest"
 website: https://bayern.devfest.de/
 location: Munich, Germany
 
