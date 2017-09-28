@@ -1,0 +1,14 @@
+language: ruby
+rvm:
+- 2.3.3
+
+# Build all branches, *including* gh-pages:
+branches:
+  only:
+  - gh-pages
+  - /.*/
+
+script: bundler exec jekyll build
+
+# route build to the container-based infrastructure for a faster build
+sudo: false
