@@ -3,7 +3,7 @@ name: "GDG DevFest"
 website: https://bayern.devfest.de/
 location: Munich, Germany
 
-date_start: 2017–11-25
+date_start: 2017-11-25
 date_end:   2017-11-25
 
 cfp_start: 2017-07-25
