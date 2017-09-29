@@ -9,7 +9,7 @@
     <meta name="description" content="A community-curated list of conferences around the world for Android developers.">
 
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{site.baseurl}}/css/main.css">
   </head>
   <body>
     <div class="container">
@@ -19,9 +19,9 @@
             {% assign main_pages = site.pages | where_exp:"node", "node.title != null" %}
             {% for node in main_pages %}
               {% if page.url == node.url %}
-                <li role="presentation" class="active"><a href="{{node.url}}">{{node.title}}</a></li>
+                <li role="presentation" class="active"><a href="{{site.baseurl}}{{node.url}}">{{node.title}}</a></li>
               {% else %}
-                <li role="presentation"><a href="{{node.url}}">{{node.title}}</a></li>
+                <li role="presentation"><a href="{{site.baseurl}}{{node.url}}">{{node.title}}</a></li>
               {% endif %}
             {% endfor %}
             <li role="presentation"><a href="https://github.com/AndroidStudyGroup/conferences/#adding-a-conference">Add</a></li>
