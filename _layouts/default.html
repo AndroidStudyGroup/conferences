@@ -16,8 +16,14 @@
       <div class="header clearfix">
         <nav>
           <ul class="nav nav-pills pull-right">
-            <li role="presentation" class="active"><a href="#">Upcoming</a></li>
-            <!--<li role="presentation"><a href="#">Past</a></li>-->
+            {% assign main_pages = site.pages | where_exp:"node", "node.title != null" %}
+            {% for node in main_pages %}
+              {% if page.url == node.url %}
+                <li role="presentation" class="active"><a href="{{node.url}}">{{node.title}}</a></li>
+              {% else %}
+                <li role="presentation"><a href="{{node.url}}">{{node.title}}</a></li>
+              {% endif %}
+            {% endfor %}
             <li role="presentation"><a href="https://github.com/AndroidStudyGroup/conferences/#adding-a-conference">Add</a></li>
           </ul>
         </nav>

@@ -1,0 +1,21 @@
+---
+layout: default
+title: Past
+---
+
+<ul class="conference-list list-unstyled">
+{% assign sorted_conferences = (site.conferences | sort: 'date_start' | reverse) %}
+{% assign today = (site.time | date: "%s" ) %}
+{% for conference in sorted_conferences %}
+  {% assign date_end = (conference.date_end | date: "%s") %}
+  {% if today >= date_end %}
+  <li>
+    {{ conference.date_start | date: "%Y-%m-%d" }}&nbsp;
+    <a class="post-link" href="{{ conference.website }}">{{ conference.name }}</a>
+    {% if conference.location %}
+    &nbsp;<small>{{ conference.location }}</small>
+    {% endif %}
+  </li>
+  {% endif %}
+{% endfor %}
+</ul>
