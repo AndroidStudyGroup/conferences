@@ -12,3 +12,6 @@ script: bundler exec jekyll build
 
 # route build to the container-based infrastructure for a faster build
 sudo: false
+
+notifications:
+  email: false
