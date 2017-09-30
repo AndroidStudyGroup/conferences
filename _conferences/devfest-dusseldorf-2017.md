@@ -1,5 +1,5 @@
-﻿---
-name: GDG DevFest
+---
+name: "GDG DevFest"
 website: https://duesseldorf.devfest.de/
 location: Düsseldorf, Germany
 
