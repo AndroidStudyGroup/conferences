@@ -1,5 +1,5 @@
-﻿---
-name: GDD Europe
+---
+name: "GDD Europe"
 website: https://developers.google.com/events/gdd-europe/
 location: Krakow, Poland
 

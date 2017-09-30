@@ -1,5 +1,5 @@
-﻿---
-name: United Dev Conf
+---
+name: "United Dev Conf"
 website: http://unitedconf.com/
 location: Minsk, Belarus
 
