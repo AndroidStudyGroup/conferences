@@ -37,6 +37,7 @@ Running locally
 ```
 bundle install --path vendor/bundle
 bundle exec jekyll serve
+# => Now browse to http://localhost:4000
 ```
 
 
