@@ -8,6 +8,9 @@ branches:
   - gh-pages
   - /.*/
 
+before_install:
+  - "! grep -rl $'\\xEF\\xBB\\xBF' _conferences/ || (echo 'Error: UTF-8 BOM found' && false)"
+
 script: bundler exec jekyll build
 
 # route build to the container-based infrastructure for a faster build
