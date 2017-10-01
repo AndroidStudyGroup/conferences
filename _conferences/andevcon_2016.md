@@ -1,4 +1,4 @@
-﻿---
+---
 name: AnDevCon
 website: http://www.andevcon.com/
 location: San Francisco, US

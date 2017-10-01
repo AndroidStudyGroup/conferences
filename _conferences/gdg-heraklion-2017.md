@@ -1,4 +1,4 @@
-﻿---
+---
 name: GDG Heraklion
 website: http://heraklion.googledevelopers.gr/
 location: Heraklion, Crete, Greece

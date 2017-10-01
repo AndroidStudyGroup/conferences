@@ -1,4 +1,4 @@
-﻿---
+---
 name: GDG DevFest
 website: https://devfest.gdgmaceio.org/
 location: Maceió, AL, Brazil
