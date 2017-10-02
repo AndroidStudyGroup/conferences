@@ -39,6 +39,8 @@ bundle install --path vendor/bundle
 bundle exec jekyll serve
 ```
 
+Once running the site can be opened at http://localhost:4000.
+
 
 License
 -------
