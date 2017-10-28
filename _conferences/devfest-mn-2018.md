@@ -1,5 +1,5 @@
 ---
-name: "DevFestMN"
+name: "GDG DevFest MN"
 website: https://devfest.mn/
 location: Minneapolis, MN
 
