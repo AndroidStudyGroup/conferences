@@ -1,6 +1,6 @@
 ---
 name: "GDG DevFest"
-website: https://www.eventbrite.com/e/windy-city-devfest-2018-tickets-39243027953
+website: https://windycity.devfest.io/
 location: Chicago, IL USA
 
 date_start: 2018-01-12
