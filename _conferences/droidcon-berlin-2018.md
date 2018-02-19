@@ -5,4 +5,7 @@ location: Berlin, Germany
 
 date_start: 2018-06-25
 date_end:   2018-06-27
+
+cfp_start: 2018-02-12
+cfp_site: https://cfp.droidcon.de
 ---
