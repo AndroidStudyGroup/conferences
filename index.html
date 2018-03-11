@@ -4,7 +4,12 @@ title: Upcoming
 ---
 
 <script>
-var today = new Date();
+function dateTimestamp(date = undefined) {
+  var day = (date == undefined) ? new Date() : new Date(date);
+  return day.setHours(0, 0, 0, 0)
+}
+
+var today = dateTimestamp();
 </script>
 <ul class="conference-list list-unstyled">
 {% assign sorted_conferences = (site.conferences | sort: 'date_start') %}
@@ -20,11 +25,11 @@ var today = new Date();
     {% endif %}
     <script>
       {% if conference.cfp_start %}
-      if (today >= new Date('{{ conference.cfp_start | date: "%Y-%m-%d" }}') && today <= new Date('{{ conference.cfp_end | date: "%Y-%m-%d" }}')) {
+      if (today >= dateTimestamp('{{ conference.cfp_start | date: "%Y-%m-%d" }}') && today <= dateTimestamp('{{ conference.cfp_end | date: "%Y-%m-%d" }}')) {
         document.write('<a href="{% if conference.cfp_site %}{{ conference.cfp_site }}{% else %}{{ conference.website }}{% endif %}"><span class="label label-success">Call For Papers</span></a>');
       }
       {% endif %}
-      if (today >= new Date('{{ conference.date_start | date: "%Y-%m-%d" }}') && today <= new Date('{{ conference.date_end | date: "%Y-%m-%d" }}')) {
+      if (today >= dateTimestamp('{{ conference.date_start | date: "%Y-%m-%d" }}') && today <= dateTimestamp('{{ conference.date_end | date: "%Y-%m-%d" }}')) {
         document.write('<span class="label label-danger">Happening Now</span>');
       }
     </script>
