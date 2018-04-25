@@ -1,7 +1,7 @@
 ---
 name: "AppsConf 2018"
 website: http://appsconf.ru/2018
-location: Moscow, RU
+location: Moscow, Russia
 
 date_start: 2018-10-08
 date_end:   2018-10-09
