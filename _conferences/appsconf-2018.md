@@ -1,5 +1,5 @@
 ---
-name: "AppsConf 2018"
+name: "AppsConf"
 website: http://appsconf.ru/2018
 location: Moscow, Russia
 
