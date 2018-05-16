@@ -1,0 +1,20 @@
+language: ruby
+rvm:
+- 2.3.3
+
+# Build all branches, *including* gh-pages:
+branches:
+  only:
+  - gh-pages
+  - /.*/
+
+before_install:
+  - "! grep -rl $'\\xEF\\xBB\\xBF' _conferences/ || (echo 'Error: UTF-8 BOM found' && false)"
+
+script: bundle exec jekyll build
+
+# route build to the container-based infrastructure for a faster build
+sudo: false
+
+notifications:
+  email: false
