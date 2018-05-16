@@ -1,7 +1,7 @@
 ---
 name: "Droids4Droids"
 website: http://droids4droids.co/
-location: Medellin, ANT, COLOMBIA
+location: Medellin, Colombia
 
 date_start: 2018-08-17
 date_end:   2018-08-18
