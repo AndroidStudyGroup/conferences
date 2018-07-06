@@ -1,5 +1,5 @@
 ---
-name: "GDG DACHFest"
+name: "GDG DACH DevFest"
 website: https://twitter.com/dachfest
 location: Munich, Germany
 
