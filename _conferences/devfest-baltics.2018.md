@@ -1,5 +1,5 @@
 ---
-name: "GDG DevFest Baltics"
+name: "GDG DevFest"
 website: https://devfest2018.gdg.lv/
 location: Jurmala, Latvia
 
