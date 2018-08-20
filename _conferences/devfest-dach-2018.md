@@ -1,6 +1,6 @@
 ---
 name: "GDG DACH DevFest"
-website: https://twitter.com/dachfest
+website: https://www.dachfest.com
 location: Munich, Germany
 
 date_start: 2018-11-10
