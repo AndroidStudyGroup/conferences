@@ -1,5 +1,5 @@
 ---
-name: "GDG DevFest South Africa"
+name: "GDG DevFest"
 website: https://devfest-southafrica.firebaseapp.com/
 location: Sandton, South Africa
 
