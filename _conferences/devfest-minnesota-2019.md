@@ -1,7 +1,7 @@
 ---
 name: "GDG DevFest"
 website: https://devfest.mn/
-location: Minneapolis, MN USA
+location: Minneapolis, MN, USA
 
 date_start: 2019-02-02
 date_end:   2019-02-02
