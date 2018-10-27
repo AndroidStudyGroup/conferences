@@ -1,7 +1,7 @@
 ---
 name: "GDG DevFest"
 website: http://devfest.gdgahmedabad.com/
-location: Admedabad, India
+location: Ahmedabad, India
 
 date_start: 2018-11-25
 date_end:   2018-11-25
