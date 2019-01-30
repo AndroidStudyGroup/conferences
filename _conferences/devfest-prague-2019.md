@@ -1,5 +1,5 @@
 ---
-name: "DevFest CZ"
+name: "GDG DevFest"
 website: https://2019.devfest.cz/
 location: Prague, Czech Republic
 
