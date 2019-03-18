@@ -1,4 +1,4 @@
-name: "Codemotion Madrid"
+name: "Codemotion"
 website: https://events.codemotion.com/conferences/madrid/2019/
 location: Madrid, Spain
 
