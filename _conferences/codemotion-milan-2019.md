@@ -1,4 +1,4 @@
-name: "Codemotion Milan"
+name: "Codemotion"
 website: https://events.codemotion.com/conferences/milan/2019/
 location: Madrid, Spain
 
