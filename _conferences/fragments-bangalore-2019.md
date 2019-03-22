@@ -1,5 +1,5 @@
 ---
-name: "Fragmentsn"
+name: "Fragments"
 website: https://hasgeek.com/fragments/2019
 location: Bangalore, India
 
