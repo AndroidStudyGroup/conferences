@@ -1,7 +1,7 @@
 ---
 name: "Codemotion"
 website: https://events.codemotion.com/conferences/milan/2019/
-location: Madrid, Spain
+location: Milan, Italy
 
 date_start: 2019-10-24
 date_end:   2019-10-25
