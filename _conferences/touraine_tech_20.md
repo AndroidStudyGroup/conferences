@@ -1,5 +1,5 @@
 ---
-name: "Touraine Tech '20"
+name: "Touraine Tech"
 website: https://touraine.tech/
 location: Tours, CVL, France
 
