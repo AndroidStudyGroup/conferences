@@ -1,6 +1,6 @@
 ---
 name: "GDG DevFest"
-website: https://www.meetup.com/gdg-new-orleans/events/261687168/
+website: http://devfest2019.gdgneworleans.com/
 location: New Orleans, LA, USA
 
 date_start: 2019-10-05
