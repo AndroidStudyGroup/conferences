@@ -8,5 +8,5 @@ date_end:   2018-05-31
 
 cfp_start: 2017-10-05
 cfp_end:   2018-02-06
-cpf_site: https://cfp.rigadevdays.lv/
+cfp_site: https://cfp.rigadevdays.lv/
 ---
