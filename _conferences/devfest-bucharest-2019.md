@@ -1,5 +1,5 @@
 ---
-name: "DevFest"
+name: "GDG DevFest"
 website: https://devfest.ro
 location: Bucharest, Romania
 
