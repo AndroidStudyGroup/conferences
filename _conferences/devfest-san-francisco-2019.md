@@ -1,5 +1,5 @@
 ---
-name:     "GDG Devfest"
+name:     "GDG DevFest"
 website:  https://devfestsanfrancisco.eventbrite.com
 location: San Francisco, CA, USA
 
