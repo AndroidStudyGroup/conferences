@@ -1,5 +1,5 @@
 ---
-name:     "GDG Devfest"
+name:     "GDG DevFest"
 website:  https://stldevfest.com/
 location: St. Louis, MO, USA
 
