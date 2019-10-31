@@ -1,5 +1,5 @@
 ---
-name: "Kotlin in Boston Everywhere - DevFest"
+name: "Kotlin in Boston Everywhere DevFest"
 website: https://sites.google.com/view/kotlinbostoneverywhere/home
 location: Boston, MA USA
 
