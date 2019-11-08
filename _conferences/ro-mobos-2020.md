@@ -1,5 +1,5 @@
 ---
-name: "RO MobOS"
+name: "MobOS"
 website: https://romobos.com/
 location: Cluj-Napoca, Romania
 
