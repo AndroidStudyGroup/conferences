@@ -1,6 +1,6 @@
 ---
-name: "FOSDEM - Kotlin DevRoom"
-website: https://fosdem.org/2020/
+name: "FOSDEM"
+website: https://fosdem.org/2020/news/2019-10-01-accepted-developer-rooms
 location: Brussels, Belgium
 
 date_start: 2020-02-01
