@@ -1,5 +1,5 @@
 ---
-name: "DevFest Singapore 2019"
+name: "GDG DevFest"
 website: https://events.withgoogle.com/devfest-singapore-2019/
 location: Singapore
 
