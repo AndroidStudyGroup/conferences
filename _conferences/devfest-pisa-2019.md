@@ -1,6 +1,6 @@
 ---
 name: "GDG DevFest"
-website: https://devfest.gdgpisa.it/
+website: https://2019.devfest.gdgpisa.it/
 location: Pisa, Italy
 
 date_start: 2019-04-13
