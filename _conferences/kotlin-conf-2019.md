@@ -1,5 +1,5 @@
 ---
-name: "Kotlin Conf"
+name: "KotlinConf"
 website: https://kotlinconf.com/
 location: Copenhagen, Denmark
 
