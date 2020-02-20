@@ -1,5 +1,6 @@
 Conferences
 ===========
+![Build Jekyll Pages](https://github.com/AndroidStudyGroup/conferences/workflows/Build%20Jekyll%20Pages/badge.svg)
 
 A community-curated list of conferences around the world for Android developers.
 
