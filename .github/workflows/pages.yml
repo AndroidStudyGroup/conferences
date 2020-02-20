@@ -1,0 +1,23 @@
+name: Build Jekyll Pages
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: bom-check
+      uses: arma-actions/bom-check@v1.0
+      with:
+        path: _conferences
+    - name: Set up Ruby 2.6.5
+      uses: actions/setup-ruby@v1
+      with:
+        ruby-version: 2.6.5
+    - name: Build with jekyll
+      run: |
+        gem install bundler
+        bundle install --jobs 4 --retry 3
+        bundle exec jekyll build
