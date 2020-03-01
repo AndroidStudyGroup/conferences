@@ -1,6 +1,6 @@
 ---
 name: "GDG DevFest"
-website: devfest.hu
+website: https://devfest.hu
 location: Budapest, Hungary
 
 date_start: 2020-03-20
