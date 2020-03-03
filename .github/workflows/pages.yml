@@ -12,7 +12,7 @@ jobs:
       uses: arma-actions/bom-check@v1.0
       with:
         path: _conferences
-    - name: Set up Ruby 2.6.5
+    - name: Set up Ruby
       uses: actions/setup-ruby@v1
       with:
         ruby-version: 2.6.5
