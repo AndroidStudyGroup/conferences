@@ -26,11 +26,14 @@ var today = dateTimestamp();
     <script>
       {% if conference.cfp_start %}
       if (today >= dateTimestamp('{{ conference.cfp_start | date: "%Y-%m-%d" }}') && today <= dateTimestamp('{{ conference.cfp_end | date: "%Y-%m-%d" }}')) {
-        document.write('<a href="{% if conference.cfp_site %}{{ conference.cfp_site }}{% else %}{{ conference.website }}{% endif %}"><span class="label label-success">Call For Papers until {{ conference.cfp_end | date: "%Y-%m-%d" }}</span></a>');
+        document.write('<a href="{% if conference.cfp_site %}{{ conference.cfp_site }}{% else %}{{ conference.website }}{% endif %}"><span class="label label-info">Call For Papers until {{ conference.cfp_end | date: "%Y-%m-%d" }}</span></a>');
       }
       {% endif %}
+      {% if conference.status %}
+        document.write('<span class="label label-danger">{{ conference.status }}</span>');
+      {% endif %}
       if (today >= dateTimestamp('{{ conference.date_start | date: "%Y-%m-%d" }}') && today <= dateTimestamp('{{ conference.date_end | date: "%Y-%m-%d" }}')) {
-        document.write('<span class="label label-danger">Happening Now</span>');
+        document.write('<span class="label label-success">Happening Now</span>');
       }
       if (today > dateTimestamp('{{ conference.date_end | date: "%Y-%m-%d" }}')) {
         document.getElementById('{{ forloop.index }}').style.color="gray";
