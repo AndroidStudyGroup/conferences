@@ -33,6 +33,7 @@ cfp_site: http://uk.droidcon.com/2015/lineup-2015/ # Optional, will default to w
 
 Running locally
 ---------------
+![Build Jekyll Pages](https://github.com/AndroidStudyGroup/conferences/workflows/Build%20Jekyll%20Pages/badge.svg)
 
 ```
 bundle install --path vendor/bundle
