@@ -2,6 +2,7 @@
 name: "GDG DevFest"
 website: https://devfest.gdgpisa.it/
 location: Pisa, Italy
+status: Postponed
 
 date_start: 2020-04-18
 date_end:   2020-04-19
