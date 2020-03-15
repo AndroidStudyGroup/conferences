@@ -2,6 +2,7 @@
 name: "Greach"
 website: https://greachconf.com/
 location: Madrid, Spain
+status: Canceled
 
 date_start: 2020-03-26
 date_end:   2020-03-28
