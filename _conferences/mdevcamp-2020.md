@@ -2,9 +2,10 @@
 name: "mDevCamp"
 website: https://mdevcamp.eu/
 location: Prague, Czech Republic
+status: Online only
 
-date_start: 2020-05-29
-date_end:   2020-05-29
+date_start: 2020-06-10
+date_end:   2020-06-11
 
 cfp_start:  2019-12-03
 cfp_end:    2020-02-29
