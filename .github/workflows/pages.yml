@@ -15,7 +15,7 @@ jobs:
     - name: Set up Ruby
       uses: actions/setup-ruby@v1
       with:
-        ruby-version: 2.6.5
+        ruby-version: '2.6'
     - name: Build with jekyll
       run: |
         gem install bundler
