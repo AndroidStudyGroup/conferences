@@ -2,7 +2,7 @@
 name: "Conference for Kotliners"
 website: https://kotliners.com/conference
 location: Budapest, Hungary
-status: Cancelled (online only)
+online: true
 
 date_start: 2020-06-05
 date_end:   2020-06-05
