@@ -11,25 +11,25 @@ function dateTimestamp(date = undefined) {
 
 var today = dateTimestamp();
 </script>
-<ul class="conference-list list-unstyled">
+<table class="table conference-list">
 {% assign sorted_conferences = (site.conferences | sort: 'date_start') %}
 {% assign today = (site.time | date: "%s" ) %}
 {% for conference in sorted_conferences %}
   {% assign date_end = (conference.date_end | date: "%s") %}
   {% if (today < date_end and conference.online) %}
-  <li id='{{ forloop.index }}'>
-    {{ conference.date_start | date: "%Y-%m-%d" }}&nbsp;
-    <a class="post-link" href="{{ conference.website }}">{{ conference.name }}</a>
+  <tr id='{{ forloop.index }}'>
+    <td>{{ conference.date_start | date: "%Y-%m-%d" }}</td>
+    <td><a class="post-link" href="{{ conference.website }}">{{ conference.name }}</a></td>
     {% if conference.location %}
-    &nbsp;<small>{{ conference.location }}</small>
+    <td><small>{{ conference.location }}</small></td>
     {% endif %}
     <script>
-      document.write('<span class="label label-primary">Online-only event</span>');
+      document.write('<td><span class="label label-primary">Online-only event</span></td>');
       {% if conference.status %}
-        document.write('<span class="label label-danger">{{ conference.status }}</span>');
+        document.write('<td><span class="label label-danger">{{ conference.status }}</span></td>');
       {% endif %}
     </script>
-  </li>
+  </tr>
   {% endif %}
 {% endfor %}
-</ul>
+</table>
