@@ -3,14 +3,6 @@ layout: default
 title: Online only
 ---
 
-<script>
-function dateTimestamp(date = undefined) {
-  var day = (date == undefined) ? new Date() : new Date(date);
-  return day.setHours(0, 0, 0, 0)
-}
-
-var today = dateTimestamp();
-</script>
 <table class="table conference-list">
 {% assign sorted_conferences = (site.conferences | sort: 'date_start') %}
 {% assign today = (site.time | date: "%s" ) %}
@@ -23,12 +15,10 @@ var today = dateTimestamp();
     {% if conference.location %}
     <td><small>{{ conference.location }}</small></td>
     {% endif %}
-    <script>
-      document.write('<td><span class="label label-primary">Online-only event</span></td>');
-      {% if conference.status %}
-        document.write('<td><span class="label label-danger">{{ conference.status }}</span></td>');
-      {% endif %}
-    </script>
+    <td><span class="label label-primary">Online-only event</span></td>
+    {% if conference.status %}
+    <td><span class="label label-danger">{{ conference.status }}</span></td>
+    {% endif %}
   </tr>
   {% endif %}
 {% endfor %}
