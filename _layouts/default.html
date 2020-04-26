@@ -14,6 +14,7 @@
   <body>
     <div class="container">
       <div class="header clearfix">
+        <h3 class="text-muted">Android Conferences</h3>
         <nav>
           <ul class="nav nav-pills pull-right">
             {% assign main_pages = site.pages | where_exp:"node", "node.title != null" %}
@@ -27,7 +28,6 @@
             <li role="presentation"><a href="https://github.com/AndroidStudyGroup/conferences/#adding-a-conference">Add</a></li>
           </ul>
         </nav>
-        <h3 class="text-muted">Android Conferences</h3>
       </div>
 
       {{ content }}

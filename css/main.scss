@@ -1,13 +1,15 @@
 ---
 ---
+
 @charset "utf-8";
 
 @import "layout";
 
 .conference-list {
   margin-bottom: 0;
+  table-layout: fixed;
 
-  li {
+  li, tr {
     padding-top: 5px;
     padding-bottom: 5px;
 
@@ -16,7 +18,41 @@
     }
 
     .label {
-      float: right;
+      margin: 2px 4px;
     }
+  }
+
+  td {
+    white-space: normal !important;
+    word-wrap: normal;
+    vertical-align: middle !important;
+  }
+
+  .date-cell {
+    white-space: nowrap !important;
+  }
+}
+
+@media (min-width: 1024px) {
+
+  td {
+    border-top: 1px solid #ddd !important;
+  }
+
+}
+
+@media (max-width: 1024px) {
+
+  td {
+    border-top: none !important;
+  }
+
+  .label {
+    display: block;
+    white-space: normal;
+  }
+
+  .cfp_end {
+    display: none;
   }
 }

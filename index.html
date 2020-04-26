@@ -4,45 +4,54 @@ title: Upcoming
 ---
 
 <script>
-function dateTimestamp(date = undefined) {
-  var day = (date == undefined) ? new Date() : new Date(date);
-  return day.setHours(0, 0, 0, 0)
-}
+    function dateTimestamp(date = undefined) {
+        var day = (date == undefined) ? new Date() : new Date(date);
+        return day.setHours(0, 0, 0, 0)
+    }
 
-var today = dateTimestamp();
+    var today = dateTimestamp();
 </script>
-<ul class="conference-list list-unstyled">
-{% assign sorted_conferences = (site.conferences | sort: 'date_start') %}
-{% assign today = (site.time | date: "%s" ) %}
-{% for conference in sorted_conferences %}
-  {% assign date_end = (conference.date_end | date: "%s") %}
-  {% if today < date_end %}
-  <li id='{{ forloop.index }}'>
-    {{ conference.date_start | date: "%Y-%m-%d" }}&nbsp;
-    <a class="post-link" href="{{ conference.website }}">{{ conference.name }}</a>
-    {% if conference.location %}
-    &nbsp;<small>{{ conference.location }}</small>
+<table class="table conference-list">
+    {% assign sorted_conferences = (site.conferences | sort: 'date_start') %}
+    {% assign today = (site.time | date: "%s" ) %}
+    {% for conference in sorted_conferences %}
+    {% assign date_start = (conference.date_start | date: "%s") %}
+    {% assign date_end = (conference.date_end | date: "%s") %}
+    {% if today < date_end %}
+    <tr id='{{ forloop.index }}'>
+        <td class="date-cell">{{ conference.date_start | date: "%Y-%m-%d" }}&nbsp;</td>
+        <td><a class="post-link" href="{{ conference.website }}">{{ conference.name }}</a></td>
+        {% if conference.location %}
+            <td><small>{{ conference.location }}</small></td>
+        {% endif %}
+        <!-- Labels -->
+        <td class="labels-cell">
+            {% if conference.cfp_start %}
+                {% assign cfp_start = (conference.cfp_start | date: "%s") %}
+                {% assign cfp_end = (conference.cfp_end | date: "%s") %}
+                {% if conference.status %}
+                    <span class="label label-danger">{{ conference.status }}</span>
+                {% endif %}
+                {% if conference.online %}
+                    <span class="label label-primary">Online event</span>
+                {% endif %}
+                {% if today >= cfp_start and today <= cfp_end %}
+                    {% assign cfp_link = conference.cfp_site | default: conference.website %}
+                    <a href="{{cfp_link}}">
+                        <span class="label label-info">Call For Papers<span class="cfp_end"> until {{ conference.cfp_end | date: "%Y-%m-%d" }}</span></span>
+                    </a>
+                {% endif %}
+                {% if today >= date_start and today <= date_end %}
+                    <span class="label label-success">Happening Now</span>
+                {% endif %}
+            {% endif %}
+        </td>
+        <script>
+            if (today > dateTimestamp('{{ conference.date_end | date: "%Y-%m-%d" }}')) {
+                document.getElementById('{{ forloop.index }}').style.color = "gray";
+            }
+        </script>
+    </tr>
     {% endif %}
-    <script>
-      {% if conference.cfp_start %}
-      if (today >= dateTimestamp('{{ conference.cfp_start | date: "%Y-%m-%d" }}') && today <= dateTimestamp('{{ conference.cfp_end | date: "%Y-%m-%d" }}')) {
-        document.write('<a href="{% if conference.cfp_site %}{{ conference.cfp_site }}{% else %}{{ conference.website }}{% endif %}"><span class="label label-info">Call For Papers until {{ conference.cfp_end | date: "%Y-%m-%d" }}</span></a>');
-      }
-      {% endif %}
-      {% if conference.status %}
-        document.write('<span class="label label-danger">{{ conference.status }}</span>');
-      {% endif %}
-      {% if conference.online %}
-        document.write('<span class="label label-primary">Online event</span>');
-      {% endif %}
-      if (today >= dateTimestamp('{{ conference.date_start | date: "%Y-%m-%d" }}') && today <= dateTimestamp('{{ conference.date_end | date: "%Y-%m-%d" }}')) {
-        document.write('<span class="label label-success">Happening Now</span>');
-      }
-      if (today > dateTimestamp('{{ conference.date_end | date: "%Y-%m-%d" }}')) {
-        document.getElementById('{{ forloop.index }}').style.color="gray";
-      }
-    </script>
-  </li>
-  {% endif %}
-{% endfor %}
-</ul>
+    {% endfor %}
+</table>

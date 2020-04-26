@@ -52,3 +52,9 @@ body {
     text-align: right;
   }
 }
+
+@media (min-width: 1024px) {
+  .header {
+    border-bottom: none;
+  }
+}
