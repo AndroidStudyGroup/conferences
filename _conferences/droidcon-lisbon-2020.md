@@ -1,6 +1,6 @@
 ---
 name: "Droidcon"
-website: https://www.eventbrite.com/e/droidcon-lisbon-2020-tickets-72244867343
+website: https://www.lisbon.droidcon.com/
 location: Lisbon, Portugal
 
 date_start: 2020-09-24
