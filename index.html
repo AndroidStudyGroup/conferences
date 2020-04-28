@@ -33,7 +33,7 @@ var today = dateTimestamp();
         document.write('<span class="label label-danger">{{ conference.status }}</span>');
       {% endif %}
       {% if conference.online %}
-        document.write('<span class="label label-primary">Online event</span>');
+        document.write('<span class="label label-primary">Online-only event</span>');
       {% endif %}
       if (today >= dateTimestamp('{{ conference.date_start | date: "%Y-%m-%d" }}') && today <= dateTimestamp('{{ conference.date_end | date: "%Y-%m-%d" }}')) {
         document.write('<span class="label label-success">Happening Now</span>');
