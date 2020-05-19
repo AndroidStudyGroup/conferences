@@ -2,6 +2,7 @@
 name: "Devoxx"
 website: https://www.devoxx.co.uk/
 location: London, UK
+status: Canceled
 
 date_start: 2020-08-24
 date_end:   2020-08-26
