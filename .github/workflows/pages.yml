@@ -8,14 +8,37 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+
     - name: bom-check
       uses: arma-actions/bom-check@v1.0
       with:
         path: _conferences
+
+    - name: Prepare for conference data file validation
+      run: |
+        mkdir _tmp
+
+        # Copy conference data files and rename to .yml because pykwalify is picky
+        for file in _conferences/*.md; do
+          name=${file#"_conferences/"}
+          name=${name%".md"}
+          cp -- "$file" "_tmp/${name}.yml"
+        done
+
+        # Strip everything but the YAML front matter block
+        sed -ni '/---/{:a;n;/---/b;p;ba}' _tmp/*.yml
+
+    - name: Validate conference data files
+      uses: eliezio/action-pykwalify@v0.3
+      with:
+        files: _tmp/*.yml
+        schema: conference_schema.yml
+
     - name: Set up Ruby
       uses: actions/setup-ruby@v1
       with:
         ruby-version: '2.6'
+
     - name: Build with jekyll
       run: |
         gem install bundler

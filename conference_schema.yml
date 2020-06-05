@@ -1,0 +1,44 @@
+# Schema for conference data
+
+type:       map
+mapping:
+  "name":
+    type:      str
+    required:  True
+  "website":
+    type:      str
+    required:  True
+    pattern:   "https?://"
+  "location":
+    type:      str
+    required:  True
+  "status":
+    type:      str
+    required:  False
+  "date_start":
+    type:      date
+    required:  True
+    format:    "YYYY-MM-DD"
+  "date_end":
+    type:      date
+    required:  True
+    format:    "YYYY-MM-DD"
+  "online":
+    type:      bool
+    required:  False
+  "cfp":
+    type:      map
+    required:  False
+    mapping:
+      "start":
+        type:      date
+        required:  True
+        format:    "YYYY-MM-DD"
+      "end":
+        type:      date
+        required:  True
+        format:    "YYYY-MM-DD"
+      "site":
+        type:      str
+        required:  False
+        pattern:   "https?://"
