@@ -6,7 +6,8 @@ location: Kyiv, Ukraine
 date_start: 2018-11-23
 date_end:   2018-11-24
 
-cfp_start: 2018-06-01
-cfp_end:   2018-09-03
-cfp_site: https://dvua18.confinabox.com/
+cfp:
+  start: 2018-06-01
+  end:   2018-09-03
+  site: https://dvua18.confinabox.com/
 ---

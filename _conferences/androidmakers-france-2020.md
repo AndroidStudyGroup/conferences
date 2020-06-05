@@ -7,7 +7,8 @@ status: Cancelled (online only)
 date_start: 2020-04-20
 date_end:   2020-04-21
 
-cfp_start: 2019-12-09
-cfp_end:   2020-01-19
-cfp_site: http://cfp.androidmakers.fr
+cfp:
+  start: 2019-12-09
+  end:   2020-01-19
+  site: http://cfp.androidmakers.fr
 ---

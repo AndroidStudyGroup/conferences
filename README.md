@@ -24,9 +24,10 @@ online: true                # Optional, for online-only events.
 date_start: 2015-10-29
 date_end:   2015-10-30
 
-cfp_start: 2015-06-16  # Optional
-cfp_end:   2015-07-21  # Optional
-cfp_site: http://uk.droidcon.com/2015/lineup-2015/ # Optional, will default to website
+cfp:  # Optional
+  start: 2015-06-16
+  end:   2015-07-21
+  site: http://uk.droidcon.com/2015/lineup-2015/ # Optional, will default to website
 ---
 ```
 

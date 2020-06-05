@@ -6,7 +6,8 @@ location: Hamburg, Germany
 date_start: 2019-11-02
 date_end:   2019-11-02
 
-cfp_start: 2019-09-19
-cfp_end:   2019-10-05
-cfp_site: https://sessionize.com/devfest-hamburg-2019
+cfp:
+  start: 2019-09-19
+  end:   2019-10-05
+  site: https://sessionize.com/devfest-hamburg-2019
 ---

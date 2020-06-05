@@ -7,7 +7,8 @@ status: Cancelled
 date_start: 2020-04-28
 date_end:   2020-04-29
 
-cfp_start: 2019-07-14
-cfp_end:   2019-11-15
-cfp_site:  http://www.codemobile.co.uk/call-for-speakers/
+cfp:
+  start: 2019-07-14
+  end:   2019-11-15
+  site:  http://www.codemobile.co.uk/call-for-speakers/
 ---
