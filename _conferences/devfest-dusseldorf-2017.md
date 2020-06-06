@@ -6,7 +6,8 @@ location: Düsseldorf, Germany
 date_start: 2017-09-09
 date_end:   2017-09-10
 
-cfp_start: 2017-07-17
-cfp_end:   2017-08-06
-cfp_site: https://www.papercall.io/devfest2017
+cfp:
+  start: 2017-07-17
+  end:   2017-08-06
+  site: https://www.papercall.io/devfest2017
 ---

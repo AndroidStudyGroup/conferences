@@ -6,7 +6,8 @@ location: London, UK
 date_start: 2018-05-09
 date_end:   2018-05-11
 
-cfp_start: 2017-11-08
-cfp_end:   2018-01-09
-cfp_site:  http://cfp.devoxx.co.uk/
+cfp:
+  start: 2017-11-08
+  end:   2018-01-09
+  site:  http://cfp.devoxx.co.uk/
 ---

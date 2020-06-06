@@ -6,7 +6,8 @@ location: Berlin, Germany
 date_start: 2017-11-03
 date_end:   2017-11-05
 
-cfp_start: 2017-10-06
-cfp_end:   2017-10-20
-cfp_site: https://bit.ly/devfestberlin17cfp
+cfp:
+  start: 2017-10-06
+  end:   2017-10-20
+  site: https://bit.ly/devfestberlin17cfp
 ---

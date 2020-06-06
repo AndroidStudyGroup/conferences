@@ -24,9 +24,9 @@ var today = dateTimestamp();
     &nbsp;<small>{{ conference.location }}</small>
     {% endif %}
     <script>
-      {% if conference.cfp_start %}
-      if (today >= dateTimestamp('{{ conference.cfp_start | date: "%Y-%m-%d" }}') && today <= dateTimestamp('{{ conference.cfp_end | date: "%Y-%m-%d" }}')) {
-        document.write('<a href="{% if conference.cfp_site %}{{ conference.cfp_site }}{% else %}{{ conference.website }}{% endif %}"><span class="label label-info">Call For Papers until {{ conference.cfp_end | date: "%Y-%m-%d" }}</span></a>');
+      {% if conference.cfp.start %}
+      if (today >= dateTimestamp('{{ conference.cfp.start | date: "%Y-%m-%d" }}') && today <= dateTimestamp('{{ conference.cfp.end | date: "%Y-%m-%d" }}')) {
+        document.write('<a href="{% if conference.cfp.site %}{{ conference.cfp.site }}{% else %}{{ conference.website }}{% endif %}"><span class="label label-info">Call For Papers until {{ conference.cfp.end | date: "%Y-%m-%d" }}</span></a>');
       }
       {% endif %}
       {% if conference.status %}

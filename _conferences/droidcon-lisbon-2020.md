@@ -6,7 +6,8 @@ location: Lisbon, Portugal
 date_start: 2020-09-24
 date_end:   2020-09-25
 
-cfp_start: 2020-02-19
-cfp_end:   2020-06-30
-cfp_site:  https://sessionize.com/droidcon-lisbon2020/
+cfp:
+  start: 2020-02-19
+  end:   2020-06-30
+  site:  https://sessionize.com/droidcon-lisbon2020/
 ---
