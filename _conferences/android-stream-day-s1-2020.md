@@ -8,7 +8,7 @@ date_start: 2020-08-08
 date_end:   2020-08-09
 
 cfp:  # Optional
-  start: 2015-06-16
-  end:   2015-07-21
+  start: 2020-07-02
+  end:   2020-07-20
   site: https://sessionize.com/android-stream-day-s1/ # Optional, will default to website
 ---
