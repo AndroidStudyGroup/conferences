@@ -7,7 +7,8 @@ online: true
 date_start: 2020-12-16
 date_end:   2020-12-17
 
-cfp_start: 2020-07-25
-cfp_end:   2020-10-15
-cfp_site: https://sessionize.com/droidconAPAC/
+cfp:
+  start: 2020-07-25
+  end:   2020-10-15
+  site: https://sessionize.com/droidconAPAC/
 ---
