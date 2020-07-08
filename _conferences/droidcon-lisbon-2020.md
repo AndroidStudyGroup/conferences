@@ -2,6 +2,7 @@
 name: "Droidcon"
 website: https://www.lisbon.droidcon.com/
 location: Lisbon, Portugal
+status: Canceled
 
 date_start: 2020-09-24
 date_end:   2020-09-25
