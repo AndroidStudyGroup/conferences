@@ -2,7 +2,7 @@
 name: "CodeMobile"
 website: http://www.codemobile.co.uk/
 location: London, UK
-status: Cancelled
+status: Canceled
 
 date_start: 2020-04-28
 date_end:   2020-04-29
