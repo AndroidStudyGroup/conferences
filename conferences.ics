@@ -6,7 +6,9 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:https://androidstudygroup.github.io/conferences/
 METHOD:PUBLISH
-{% for conference in site.conferences %}BEGIN:VEVENT
+{%- for conference in site.conferences -%}
+{%- if conference.status == null %}
+BEGIN:VEVENT
 UID:{{ page.uid_prefix }}{{ conference.relative_path }}
 URL:{{ conference.website }}
 DESCRIPTION:{{ conference.website }}{% if conference.location %}
@@ -17,4 +19,6 @@ DTSTART;VALUE=DATE:{{ conference.date_start | date: "%Y%m%d" }}
 DTEND;VALUE=DATE:{{ conference.date_end | date: "%s" | plus: 86400 | date: "%Y%m%d" }}
 DTSTAMP:{{ site.time | date: "%Y%m%dT%H%M%S" }}Z
 END:VEVENT
-{% endfor %}END:VCALENDAR
+{%- endif -%}
+{%- endfor %}
+END:VCALENDAR
