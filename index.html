@@ -3,46 +3,67 @@ layout: default
 title: Upcoming
 ---
 
-<script>
-function dateTimestamp(date = undefined) {
-  var day = (date == undefined) ? new Date() : new Date(date);
-  return day.setHours(0, 0, 0, 0)
-}
-
-var today = dateTimestamp();
-</script>
 <ul class="conference-list list-unstyled">
-{% assign sorted_conferences = site.conferences | sort: 'date_start' %}
-{% assign today = site.time | date: "%s" %}
-{% for conference in sorted_conferences %}
-  {% assign date_end = conference.date_end | date: "%s" %}
-  {% if today < date_end %}
-  <li id='{{ forloop.index }}'>
+{%- assign sorted_conferences = site.conferences | sort: 'date_start' -%}
+{%- assign today = site.time | date: "%s" -%}
+{%- for conference in sorted_conferences -%}
+  {%- assign date_end = conference.date_end | date: "%s" -%}
+  {%- if today < date_end %}
+  <li id='{{ forloop.index }}' data-conference-start="{{ conference.date_start | date: "%Y-%m-%d" }}" data-conference-end="{{ conference.date_end | date: "%Y-%m-%d" }}">
     {{ conference.date_start | date: "%Y-%m-%d" }}&nbsp;
     <a class="post-link" href="{{ conference.website }}">{{ conference.name }}</a>
-    {% if conference.location %}
+    {%- if conference.location %}
     &nbsp;<small>{{ conference.location }}</small>
-    {% endif %}
-    <script>
-      {% if conference.cfp.start %}
-      if (today >= dateTimestamp('{{ conference.cfp.start | date: "%Y-%m-%d" }}') && today <= dateTimestamp('{{ conference.cfp.end | date: "%Y-%m-%d" }}')) {
-        document.write('<a href="{% if conference.cfp.site %}{{ conference.cfp.site }}{% else %}{{ conference.website }}{% endif %}"><span class="label label-info">Call For Papers until {{ conference.cfp.end | date: "%Y-%m-%d" }}</span></a>');
-      }
-      {% endif %}
-      {% if conference.status %}
-        document.write('<span class="label label-danger">{{ conference.status }}</span>');
-      {% endif %}
-      {% if conference.online %}
-        document.write('<span class="label label-primary">Online-only event</span>');
-      {% endif %}
-      if (today >= dateTimestamp('{{ conference.date_start | date: "%Y-%m-%d" }}') && today <= dateTimestamp('{{ conference.date_end | date: "%Y-%m-%d" }}')) {
-        document.write('<span class="label label-success">Happening Now</span>');
-      }
-      if (today > dateTimestamp('{{ conference.date_end | date: "%Y-%m-%d" }}')) {
-        document.getElementById('{{ forloop.index }}').style.color="gray";
-      }
-    </script>
+    {%- endif -%}
+
+    {%- if conference.cfp.start %}
+      <a class="conference-cfp hide" data-conference-cfp-start="{{ conference.cfp.start | date: "%Y-%m-%d" }}" data-conference-cfp-end="{{ conference.cfp.end | date: "%Y-%m-%d" }}" href="{% if conference.cfp.site %}{{ conference.cfp.site }}{% else %}{{ conference.website }}{% endif %}">
+        <span class="label label-info">Call For Papers until {{ conference.cfp.end | date: "%Y-%m-%d" }}</span>
+      </a>
+    {%- endif -%}
+    {%- if conference.status %}
+      <span class="conference-status label label-danger">{{ conference.status }}</span>
+    {%- endif -%}
+    {%- if conference.online %}
+      <span class="conference-online label label-primary">Online-only event</span>
+    {%- endif %}
   </li>
-  {% endif %}
-{% endfor %}
+  {%- endif -%}
+{%- endfor -%}
 </ul>
+
+<script>
+  function dateTimestamp(date = undefined) {
+    const day = (date == undefined) ? new Date() : new Date(date);
+    return day.setHours(0, 0, 0, 0)
+  }
+
+  const today = dateTimestamp();
+
+  const conferenceElements = document.querySelectorAll(".conference-list li")
+  for (const conferenceElement of conferenceElements) {
+    const conferenceStart = dateTimestamp(conferenceElement.dataset.conferenceStart)
+    const conferenceEnd = dateTimestamp(conferenceElement.dataset.conferenceEnd)
+    if (today > conferenceEnd) {
+      conferenceElement.classList.add("text-muted")
+    }
+
+    const status = conferenceElement.querySelector(".conference-status")
+    if (!status) {
+      const cfpElement = conferenceElement.querySelector(".conference-cfp")
+      if (cfpElement) {
+        const cfpStart = dateTimestamp(cfpElement.dataset.conferenceCfpStart)
+        const cfpEnd = dateTimestamp(cfpElement.dataset.conferenceCfpEnd)
+
+        const showCfpLink = today >= cfpStart && today <= cfpEnd
+        if (showCfpLink) {
+          cfpElement.classList.remove("hide")
+        }
+      }
+
+      if (today >= conferenceStart && today <= conferenceEnd) {
+        conferenceElement.innerHTML = conferenceElement.innerHTML + '<span class="label label-success">Happening Now</span>'
+      }
+    }
+  }
+</script>
