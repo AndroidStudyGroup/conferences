@@ -14,6 +14,9 @@ jobs:
       with:
         path: _conferences
 
+    - name: Validate conference data file names
+      run: ls -1 _conferences/ | grep -v '\.md$' && echo "Found above file names not ending in '.md'. Please correct." && exit 1 || true
+
     - name: Prepare for conference data file validation
       run: |
         mkdir _tmp
