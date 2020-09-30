@@ -18,7 +18,7 @@ The contents of the file should use the following template:
 name: "Droidcon"
 website: http://uk.droidcon.com/2015/
 location: London, UK
-status: Cancelled/Postponed # Optional, will show up in red if provided
+status: Canceled/Postponed  # Optional, will show up in red if provided
 online: true                # Optional, for online-only events.
 
 date_start: 2015-10-29
@@ -37,7 +37,6 @@ cfp:  # Optional
 
 For online only events please set `online: true` in the template. They will show up in the _Upcoming_ page as well as in the [Online-only](http://androidstudygroup.github.io/conferences/online.html) page.
 
-Please use the `status:` field only for cancellation or postponement as it will show up in red in the website.
 
 Running locally
 ---------------
