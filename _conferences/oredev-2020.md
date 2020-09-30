@@ -2,6 +2,7 @@
 name: "Øredev"
 website: http://oredev.org/
 location: Malmö, Sweden
+status: Canceled
 
 date_start: 2020-11-04
 date_end:   2020-11-06
