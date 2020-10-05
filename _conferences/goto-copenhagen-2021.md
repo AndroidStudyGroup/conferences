@@ -1,6 +1,6 @@
 ---
 name: "GOTO"
-website: http://gotocph.com
+website: https://gotocph.com
 location: Copenhagen, Denmark
 
 date_start: 2021-04-19
