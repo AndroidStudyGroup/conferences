@@ -1,6 +1,6 @@
 ---
 name: "FOSDEM - Kotlin DevRoom"
-website: https://fosdem.org/2021/
+website: https://fosdem.org/2021/schedule/track/kotlin
 location: Brussels, Belgium
 online: true
 
