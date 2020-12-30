@@ -9,6 +9,6 @@ date_end:   2021-02-07
 
 cfp:
   start: 2020-12-05
-  end:   2020-12-27
+  end:   2020-12-31
   site:  https://lists.fosdem.org/pipermail/fosdem/2020q4/003130.html
 ---
