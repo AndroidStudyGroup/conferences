@@ -1,6 +1,6 @@
 ---
 name: "GDG DevFest"
-website: https://devfest.co.za/
+website: https://gdg.community.dev/events/details/google-gdg-johannesburg-presents-devfest-south-africa-2021/
 location: South Africa
 online: true
 
