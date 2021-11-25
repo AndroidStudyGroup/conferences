@@ -1,6 +1,6 @@
 ---
 name: "Droidcon"
-website: https://pretix.eu/droidconglobal/dcberlin22/
+website: https://www.berlin.droidcon.com/
 location: Berlin, Germany
 
 date_start: 2022-07-06
