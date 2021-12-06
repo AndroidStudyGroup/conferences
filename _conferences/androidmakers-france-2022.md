@@ -10,5 +10,5 @@ date_end:   2022-04-26
 cfp:
   start: 2021-12-06
   end:   2022-02-15
-  site: http://cfp.androidmakers.fr
+  site: https://cfp.androidmakers.fr/
 ---
