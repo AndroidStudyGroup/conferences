@@ -1,6 +1,6 @@
 ---
 name: "Droidcon"
-website: https://pretix.eu/droidconglobal/DCLDN22/
+website: https://www.london.droidcon.com/
 location: London, UK
 
 date_start: 2022-10-27
