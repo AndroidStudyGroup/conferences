@@ -32,7 +32,7 @@ jobs:
         sed -ni '/---/{:a;n;/---/b;p;ba}' _tmp/*.yml
 
     - name: Validate conference data files
-      uses: eliezio/action-pykwalify@v0.3
+      uses: cketti/action-pykwalify@v0.3-temp-fix
       with:
         files: _tmp/*.yml
         schema: conference_schema.yml
