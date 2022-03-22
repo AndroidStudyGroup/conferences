@@ -4,8 +4,8 @@ website: https://android-worldwide.com/
 location: Global
 online: true
 
-date_start: 2022-04-26
-date_end:   2022-04-26
+date_start: 2022-04-19
+date_end:   2022-04-19
 
 cfp:
   start: 2022-01-25
