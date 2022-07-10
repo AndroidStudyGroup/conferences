@@ -7,7 +7,4 @@ online: true
 date_start: 2022-07-27
 date_end: 2022-07-27
 
-start:  2022-07-27
-end:    2022-07-27
-site:   https://hopin.com/events/women-who-code-mobile-summit/registration
 ---
