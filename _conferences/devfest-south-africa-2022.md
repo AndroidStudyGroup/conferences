@@ -4,7 +4,7 @@ website: https://gdg.community.dev/events/details/google-gdg-cape-town-presents-
 location: Cape Town, South Africa
 
 date_start: 2022-11-25
-date_end:   2022-11-26
+date_end:   2022-11-25
 
 cfp:
   start: 2022-09-01
