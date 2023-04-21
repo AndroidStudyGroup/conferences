@@ -4,7 +4,7 @@ website: https://www.vietnam.droidcon.com/
 location: Ho Chi Minh City, Vietnam
 
 date_start: 2023-07-15
-date_end:   2023-07-16
+date_end:   2023-07-15
 
 cfp:
   start: 2023-04-20
