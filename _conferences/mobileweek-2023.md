@@ -1,7 +1,7 @@
 ---
 name: "mobileWeek"
 website: https://mobileweek.co/
-location: San Mateo, California, United States
+location: San Mateo, CA, USA
 online: true
 
 date_start: 2023-08-15
