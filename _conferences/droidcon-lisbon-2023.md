@@ -3,8 +3,8 @@ name: "Droidcon"
 website: https://www.lisbon.droidcon.com/
 location: Lisbon, Portugal
 
-date_start: 2023-09-29
-date_end:   2023-09-28
+date_start: 2023-09-28
+date_end:   2023-09-29
 
 cfp:
   start: 2023-04-01
