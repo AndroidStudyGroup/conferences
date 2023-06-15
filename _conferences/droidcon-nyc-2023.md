@@ -8,6 +8,6 @@ date_end:   2023-09-15
 
 cfp:
   start: 2023-04-15
-  end:   2023-06-15
+  end:   2023-07-10
   site:  https://sessionize.com/droidcon-nyc-2023/
 ---
