@@ -4,6 +4,6 @@ website: https://androidmakers.droidcon.com/
 location: Paris, France
 online: false
 
-date_start: 2023-04-25
-date_end:   2023-04-26
+date_start: 2024-04-25
+date_end:   2024-04-26
 ---
