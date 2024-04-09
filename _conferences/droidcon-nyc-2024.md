@@ -1,7 +1,7 @@
 ---
 name: "Droidcon"
 website: https://nyc.droidcon.com/
-location: New York, NY, USA
+location: New York City, NY, USA
 
 date_start: 2024-09-19
 date_end:   2024-09-20
