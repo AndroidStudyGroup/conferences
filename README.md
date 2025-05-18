@@ -13,7 +13,7 @@ with the conference name, the year, and with an `.md` extension (for
 example, `my-cool-conference-2016.md`).
 
 The contents of the file should use the following template:
-```
+```yaml
 ---
 name: "Droidcon"
 website: http://uk.droidcon.com/2015/
