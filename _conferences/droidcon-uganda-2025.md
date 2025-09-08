@@ -8,6 +8,6 @@ date_end:   2025-11-11
 
 cfp:
   start: 2025-04-23
-  end:   2025-09-30
+  end:   2025-09-08
   site:  https://sessionize.com/droidcon-uganda-2025/
 ---
