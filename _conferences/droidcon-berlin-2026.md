@@ -8,6 +8,6 @@ date_end:   2026-10-09
 
 cfp:
   start: 2026-02-18
-  end:   2026-07-01
+  end:   2026-07-05
   site: https://sessionize.com/nextapp26
 ---
