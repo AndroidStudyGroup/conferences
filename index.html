@@ -10,7 +10,9 @@ title: Upcoming
   {%- assign date_end = conference.date_end | date: "%s" -%}
   {%- if today < date_end %}
   <li id='{{ forloop.index }}' data-conference-start="{{ conference.date_start | date: "%Y-%m-%d" }}" data-conference-end="{{ conference.date_end | date: "%Y-%m-%d" }}">
-    {{ conference.date_start | date: "%Y-%m-%d" }}&nbsp;
+    <a class="post-link" href='https://www.google.com/calendar/render?action=TEMPLATE&text={{ conference.name | replace: " ", "+" }}&dates={{ conference.date_start | date: "%Y%m%d"}}/{{ conference.date_end | date: "%Y%m%d"}}&details=Conference+website:+{{ conference.website }}&location={{ conference.location | replace: " ", "+"}}&sf=true&output=xml'>
+      {{ conference.date_start | date: "%Y-%m-%d" }}
+    </a>&nbsp;
     <a class="post-link" href="{{ conference.website }}">{{ conference.name }}</a>
     {%- if conference.location %}
     &nbsp;<small>{{ conference.location }}</small>
